@@ -5,22 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="516" Width="800">
     <Grid x:Name="php">
-        <Button x:Name="Bash" Content="Bash" HorizontalAlignment="Left" Height="44" Margin="69,34,0,0" VerticalAlignment="Top" Width="60" Background="#FF32CD87"/>
-        <Button x:Name="text" Content="Text" HorizontalAlignment="Left" Height="44" Margin="10,34,0,0" VerticalAlignment="Top" Width="40"/>
-        <Button x:Name="Cplus" Content="C++" HorizontalAlignment="Left" Height="44" Margin="134,34,0,0" VerticalAlignment="Top" Width="60" Background="#FF245CF1"/>
-        <Button x:Name="Cszarp" Content="C#" HorizontalAlignment="Left" Height="44" Margin="199,34,0,0" VerticalAlignment="Top" Width="60" Background="#FFA71FF5"/>
-        <Button x:Name="Java" Content="Java" HorizontalAlignment="Left" Height="44" Margin="264,34,0,0" VerticalAlignment="Top" Width="60" Background="#FF3A3FA8"/>
-        <Button x:Name="CSS" Content="CSS" HorizontalAlignment="Left" Height="44" Margin="329,34,0,0" VerticalAlignment="Top" Width="60" Background="#FF5E64E6"/>
-        <Button x:Name="html" Content="HTML" HorizontalAlignment="Left" Height="44" Margin="394,34,0,0" VerticalAlignment="Top" Width="60" Background="#FFF94B30"/>
-        <Button x:Name="JS" Content="Java Script" HorizontalAlignment="Left" Height="44" Margin="459,34,0,0" VerticalAlignment="Top" Width="94" Background="#FFE3EC33"/>
-        <Button x:Name="html_Copy" Content="PHP" HorizontalAlignment="Left" Height="44" Margin="558,34,0,0" VerticalAlignment="Top" Width="60" Background="#FF9B9290"/>
-        <Button x:Name="Python" Content="Python" HorizontalAlignment="Left" Height="44" Margin="623,34,0,0" VerticalAlignment="Top" Width="60" Background="#FFEEC22C"/>
-        <Button x:Name="sql" Content="SQL" HorizontalAlignment="Left" Height="44" Margin="688,34,0,0" VerticalAlignment="Top" Width="60" Background="#FF2C7BEE"/>
-        <Button x:Name="_1" Content="1" HorizontalAlignment="Left" Height="35" Margin="294,100,0,0" VerticalAlignment="Top" Width="40" Background="#FFFBF8F8"/>
-        <Button x:Name="_2" Content="2" HorizontalAlignment="Left" Height="35" Margin="349,100,0,0" VerticalAlignment="Top" Width="40" Background="#FFFBF8F8"/>
-        <Button x:Name="_3_" Content="3" HorizontalAlignment="Left" Height="35" Margin="400,100,0,0" VerticalAlignment="Top" Width="40" Background="#FFFBF8F8"/>
-
+        <Button x:Name="Bash" Content="Bash" HorizontalAlignment="Left" Height="44" Margin="69,34,0,0" VerticalAlignment="Top" Width="60" Background="#FF32CD87" Click="Bash_Click" />
+        <Button x:Name="text" Content="Text" HorizontalAlignment="Left" Height="44" Margin="17,35,0,0" VerticalAlignment="Top" Width="40" Click="text_Click" />
+        <Button x:Name="Cplus" Content="C++" HorizontalAlignment="Left" Height="44" Margin="134,34,0,0" VerticalAlignment="Top" Width="60" Background="#FF245CF1" Click="Cplus_Click" />
+        <Button x:Name="Cszarp" Content="C#" HorizontalAlignment="Left" Height="44" Margin="199,34,0,0" VerticalAlignment="Top" Width="60" Background="#FFA71FF5" Click="Cszarp_Click" />
+        <Button x:Name="Java" Content="Java" HorizontalAlignment="Left" Height="44" Margin="264,34,0,0" VerticalAlignment="Top" Width="60" Background="#FF3A3FA8" Click="Java_Click_1" />
+        <Button x:Name="CSS" Content="CSS" HorizontalAlignment="Left" Height="44" Margin="329,34,0,0" VerticalAlignment="Top" Width="60" Background="#FF5E64E6" Click="CSS_Click" />
+        <Button x:Name="html" Content="HTML" HorizontalAlignment="Left" Height="44" Margin="394,34,0,0" VerticalAlignment="Top" Width="60" Background="#FFF94B30" Click="html_Click" />
+        <Button x:Name="javascript" Content="Java Script" HorizontalAlignment="Left" Height="44" Margin="459,34,0,0" VerticalAlignment="Top" Width="94" Background="#FFE3EC33" Click="javascript_Click" />
+        <Button x:Name="html_Copy" Content="PHP" HorizontalAlignment="Left" Height="44" Margin="558,34,0,0" VerticalAlignment="Top" Width="60" Background="#FF9B9290" Click="html_Copy_Click" />
+        <Button x:Name="Python" Content="Python" HorizontalAlignment="Left" Height="44" Margin="623,34,0,0" VerticalAlignment="Top" Width="60" Background="#FFEEC22C" Click="Python_Click" />
+        <Button x:Name="sql" Content="SQL" HorizontalAlignment="Left" Height="44" Margin="688,34,0,0" VerticalAlignment="Top" Width="60" Background="#FF2C7BEE" Click="sql_Click" />
+        <Button x:Name="_1" Content="1" HorizontalAlignment="Left" Height="35" Margin="295,127,0,0" VerticalAlignment="Top" Width="40" Background="#FFFBF8F8" Click="_1_Click" />
+        <Button x:Name="_2" Content="2" HorizontalAlignment="Left" Height="35" Margin="350,127,0,0" VerticalAlignment="Top" Width="40" Background="#FFFBF8F8" Click="_2_Click" />
+        <Button x:Name="_3_" Content="3" HorizontalAlignment="Left" Height="35" Margin="401,127,0,0" VerticalAlignment="Top" Width="40" Background="#FFFBF8F8" Click="_3__Click" />
+        <DataGrid x:Name="Data_grid" HorizontalAlignment="Left" Height="282" Margin="42,183,0,0" VerticalAlignment="Top" Width="710" CanUserAddRows="False" />
+        <ComboBox x:Name="combobox" HorizontalAlignment="Left" Height="35" Margin="617,127,0,0" VerticalAlignment="Top" Width="91" IsDropDownOpen="False" Text="10" SelectedIndex="0" GotFocus="combobox_Selected">
+            <ListBoxItem Content="10" VerticalAlignment="Center" />
+            <ListBoxItem Content="20" VerticalAlignment="Center" />
+        </ComboBox>
     </Grid>
 </Window>
